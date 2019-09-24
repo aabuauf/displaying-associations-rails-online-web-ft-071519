@@ -2,11 +2,11 @@
 
 <%= form_for(@category) do |f| %>
   <div class="field">
-    <%= f.label :name, 'Category Name:' %><br>
-    <%= f.text_field :name %>
+    <%= f.label :category[name], 'Category Name:' %><br>
+    <%= f.text_field :category[name] %>
   </div>
 
-  <div class="actions">
+  <div class="actions" , "Update category">
     <%= f.submit  %>
   </div>
 <% end %>
